@@ -34,8 +34,15 @@ button { font: inherit; }
 .site-nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.35rem); }
 .site-nav a { color: #4e5752; font-size: 0.78rem; font-weight: 600; transition: color 160ms ease; }
 .site-nav a:hover { color: #537c33; }
+.site-nav a[aria-current="page"] { color: #537c33; }
 .menu-toggle { display: none; }
 .section-wrap { width: min(100% - 2.5rem, 1080px); margin-inline: auto; }
+.page-intro { padding-block: clamp(4rem, 9vw, 7rem) 2.5rem; }
+.page-intro .eyebrow { margin-bottom: 1.1rem; }
+.page-title { max-width: 52rem; margin-bottom: 1rem; font-size: clamp(2.8rem, 7vw, 5.2rem); line-height: 1.02; letter-spacing: -0.06em; }
+.page-description { max-width: 38rem; margin-bottom: 0; color: #626b65; font-size: 0.95rem; line-height: 1.8; }
+.page-content { margin-bottom: clamp(4rem, 9vw, 7rem); }
+.page-content.section-rule { border-top: 1px solid var(--line); }
 .hero { min-height: min(720px, calc(100svh - 4.5rem)); padding-block: clamp(4.5rem, 10vw, 8rem) 4rem; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(230px, 0.72fr); align-items: center; gap: clamp(2rem, 8vw, 7rem); position: relative; }
 .hero-copy { padding-bottom: 2rem; }
 .eyebrow, .method-index, .portrait-index, .empty-count, .contact-pending { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0; }
@@ -120,6 +127,8 @@ h1 span { color: #648b39; }
   .site-nav.is-open { display: flex; }
   .site-nav a { padding: 0.9rem 0.25rem; border-bottom: 1px solid var(--line); font-size: 0.9rem; }
   .section-wrap { width: min(100% - 2rem, 1080px); }
+  .page-intro { padding-block: 3.5rem 2rem; }
+  .page-title { font-size: clamp(2.8rem, 12vw, 4rem); }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 2rem; padding-block: 4rem 4.5rem; }
   .hero-copy { padding-bottom: 0; }
   h1 { font-size: clamp(4rem, 17vw, 6rem); }
