@@ -25,30 +25,31 @@
         <a class="header-cta" href="contacto.html">Hablemos <span aria-hidden="true">→</span></a>
       </div>
     </header>
-    <main id="contenido">
-      <section class="page-intro section-wrap" aria-labelledby="page-title">
-        <p class="eyebrow">04 — Contacto</p>
-        <h1 class="page-title" id="page-title">Hablemos.</h1>
-        <p class="page-description">¿Quieres conversar sobre una oportunidad? Escríbeme por correo, encuéntrame en LinkedIn o explora el código de mis proyectos en GitHub.</p>
-      </section>
-      <section class="contact page-content section-wrap section-rule" aria-labelledby="contact-title">
-        <div class="section-heading">
-          <p class="eyebrow">Canales</p>
-          <h2 id="contact-title">En contacto<span>.</span></h2>
-        </div>
-        <div class="contact-list" aria-label="Perfil profesional">
-          <a class="contact-row" href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>@ellmoi</span><span aria-hidden="true">↗</span></a>
-          <a class="contact-row" href="https://www.linkedin.com/in/moises-giraldo-7874b9283" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>Moisés Giraldo</span><span aria-hidden="true">↗</span></a>
-          <a class="contact-row" href="mailto:moises10giraldo@gmail.com"><span>Correo</span><span>moises10giraldo@gmail.com</span><span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-      <section class="contact-request section-wrap section-rule" aria-labelledby="contact-form-title">
-        <div class="contact-request-heading">
-          <p class="eyebrow">Cuéntame tu idea</p>
-          <h2 id="contact-form-title">Cotizar o <span>conversar.</span></h2>
-          <p>Describe brevemente lo que necesitas y te responderé al correo que indiques.</p>
-        </div>
-        <form class="contact-form" id="contact-form" action="mailto:moises10giraldo@gmail.com" method="post" enctype="text/plain">
+    <main id="contenido" class="contact-page">
+      <div class="contact-page-layout">
+        <section class="contact-intro" aria-labelledby="page-title">
+          <p class="eyebrow">04 — Contacto</p>
+          <h1 id="page-title">Conversemos<br>tus <span>ideas.</span></h1>
+          <p>Estoy disponible para nuevos proyectos, colaboraciones y oportunidades profesionales. Cuéntame qué tienes en mente y hablemos.</p>
+          <div class="contact-reasons">
+            <p class="eyebrow">¿Por qué escribirme?</p>
+            <ul><li>Nuevos proyectos</li><li>Colaboraciones</li><li>Oportunidades profesionales</li></ul>
+          </div>
+        </section>
+        <section class="contact-channels" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="contact-small-heading">Información de contacto</h2>
+          <div class="contact-list" aria-label="Perfil profesional">
+            <a class="contact-row" href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>@ellmoi</span><span aria-hidden="true">↗</span></a>
+            <a class="contact-row" href="https://www.linkedin.com/in/moises-giraldo-7874b9283" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>Moisés Giraldo</span><span aria-hidden="true">↗</span></a>
+            <a class="contact-row" href="mailto:moises10giraldo@gmail.com"><span>Correo</span><span>moises10giraldo@gmail.com</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+        <section class="contact-form-panel" aria-labelledby="contact-form-title">
+          <div class="contact-form-heading">
+            <p class="eyebrow">Cuéntame tu idea</p>
+            <h2 id="contact-form-title">Envíame un mensaje</h2>
+          </div>
+          <form class="contact-form" id="contact-form" action="mailto:moises10giraldo@gmail.com" method="post" enctype="text/plain">
           <div class="contact-field">
             <label for="contact-name">Nombre</label>
             <input id="contact-name" name="name" type="text" autocomplete="name" required>
@@ -67,14 +68,15 @@
           </div>
           <div class="contact-field contact-field-message">
             <label for="contact-message">¿En qué puedo ayudarte?</label>
-            <textarea id="contact-message" name="message" rows="5" minlength="10" required></textarea>
+            <textarea id="contact-message" name="message" rows="4" minlength="10" required></textarea>
           </div>
           <div class="contact-form-actions">
-            <button class="button button-primary" type="submit">Preparar solicitud <span aria-hidden="true">↗</span></button>
+            <button class="button button-primary" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
             <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></p>
           </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
