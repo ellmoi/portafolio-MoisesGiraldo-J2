@@ -7,7 +7,7 @@ Portafolio personal multipágina, creado con HTML, CSS y JavaScript vanilla. No 
 - `index.html`: Inicio
 - `sobre-mi.html`: perfil y enfoque
 - `tecnologias.html`: tecnologías y herramientas
-- `proyectos.html`: proyectos y plantilla de ficha
+- `proyectos.html`: selección de proyectos y enlaces por agregar
 - `como-trabajo.html`: proceso de trabajo
 - `contacto.html`: canales de contacto
 
@@ -31,8 +31,8 @@ Abre `index.html` en el navegador. También puedes usar la extensión Live Serve
 
 ## Personalizar
 
-- Sustituye el espacio del retrato por una fotografía optimizada en WebP y mantenla en una ruta relativa dentro del repositorio.
-- Agrega proyectos reales con su imagen, descripción, tecnologías y enlaces cuando estén disponibles.
+- La foto del perfil está en `assets/moises-portafolio.webp`; reemplaza ese archivo para actualizarla.
+- Añade el enlace real de cada proyecto cuando esté disponible.
 - Completa los enlaces de GitHub y LinkedIn y la dirección de correo antes de publicar esos canales.
 
 No se incluyen datos de contacto, enlaces, proyectos ni experiencia que no hayan sido proporcionados.
