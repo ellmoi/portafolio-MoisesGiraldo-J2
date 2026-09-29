@@ -2,3 +2,15 @@
 Thumbs.db
 Desktop.ini
 .vscode/
+.idea/
+.local/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.swp
+coverage/
+playwright-report/
+test-results/
