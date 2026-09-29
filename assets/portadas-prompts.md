@@ -22,9 +22,9 @@ Create one polished wide landscape photographic portfolio banner. Subject: Flood
 
 Create one polished wide landscape photographic portfolio banner. Subject: Elegant silver everyday sedan in a minimalist architectural showroom, three quarter front angle, slate blue and silver palette, no brand marks. Cohesive premium editorial art direction. Main subject on right two thirds; left third dark uncluttered negative space for HTML title overlay. Wide horizontal composition designed to crop to 4:1. Rich tactile details, restrained lighting. No text, no lettering, no logos, no watermark. This is representative cover art, not a screenshot.
 
-## portada-superdeportivos.jpg
+## portada-superdeportivos.svg
 
-Create one polished wide landscape photographic portfolio banner. Subject: Sculptural red supercar on dark asphalt at blue hour, dramatic rear three quarter angle, red and graphite palette, no brand marks. Cohesive premium editorial art direction. Main subject on right two thirds; left third dark uncluttered negative space for HTML title overlay. Wide horizontal composition designed to crop to 4:1. Rich tactile details, restrained lighting. No text, no lettering, no logos, no watermark. This is representative cover art, not a screenshot.
+Create one polished wide landscape sportswear catalogue illustration. Subject: A premium display of football shirts inspired by Colombian club colors, including green and white, blue and white, red and white, plus a yellow national-team-inspired training top. Include folded shorts, a track jacket, running shoes, and a football to show a broad range of sports apparel. Main garments on the right two thirds; leave the left third dark and uncluttered for the HTML title overlay. Wide horizontal composition designed to crop to 4:1. Rich fabric details, restrained shop lighting. No official crests, names, text, logos, or watermark. This is representative cover art, not a screenshot.
 
 ## portada-cinema.jpg
 

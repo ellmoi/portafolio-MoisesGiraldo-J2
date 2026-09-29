@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 540" role="img" aria-labelledby="title desc">
+  <title id="title">Equipaciones y ropa deportiva</title>
+  <desc id="desc">Exhibición de camisetas de fútbol en verde y blanco, azul y blanco, rojo y blanco, además de prendas de entrenamiento, zapatillas y un balón.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1">
+      <stop stop-color="#1b2825"/>
+      <stop offset="1" stop-color="#0d1514"/>
+    </linearGradient>
+    <linearGradient id="floor" x2="0" y2="1">
+      <stop stop-color="#18211f"/>
+      <stop offset="1" stop-color="#090e0d"/>
+    </linearGradient>
+    <linearGradient id="green-shirt" x2="1" y2="1">
+      <stop stop-color="#218353"/>
+      <stop offset="1" stop-color="#0c422e"/>
+    </linearGradient>
+    <linearGradient id="blue-shirt" x2="1" y2="1">
+      <stop stop-color="#3574bd"/>
+      <stop offset="1" stop-color="#173a70"/>
+    </linearGradient>
+    <linearGradient id="red-shirt" x2="1" y2="1">
+      <stop stop-color="#c94a48"/>
+      <stop offset="1" stop-color="#78282c"/>
+    </linearGradient>
+    <linearGradient id="gold-shirt" x2="1" y2="1">
+      <stop stop-color="#f1c84f"/>
+      <stop offset="1" stop-color="#c88727"/>
+    </linearGradient>
+    <linearGradient id="jacket" x2="1" y2="1">
+      <stop stop-color="#4c5954"/>
+      <stop offset="1" stop-color="#202c29"/>
+    </linearGradient>
+    <linearGradient id="shelf" x2="0" y2="1">
+      <stop stop-color="#66706a"/>
+      <stop offset=".18" stop-color="#252e2a"/>
+      <stop offset="1" stop-color="#111715"/>
+    </linearGradient>
+    <radialGradient id="light">
+      <stop stop-color="#86a58b" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#86a58b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-.3" y="-.2" width="1.6" height="1.6">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".5"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="jersey" d="M71 18 43 23 9 69l32 28 19-18-4 188q44 14 88 0l-4-188 19 18 32-28-34-46-28-5q-12 24-29 24T71 18Z"/>
+    <path id="shorts" d="M20 10h120l-9 116-49-8-49 8Z"/>
+  </defs>
+  <rect width="1600" height="540" fill="url(#wall)"/>
+  <ellipse cx="1110" cy="100" rx="620" ry="330" fill="url(#light)"/>
+  <path d="M0 386h1600v154H0z" fill="url(#floor)"/>
+  <path d="M0 388h1600" stroke="#64716a" stroke-opacity=".45" stroke-width="3"/>
+  <path d="M75 92h465M76 93v213M540 93v213" fill="none" stroke="#9ca99c" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M92 307h430" stroke="#394740" stroke-width="8"/>
+  <path d="M636 78h865" stroke="#a8b0a6" stroke-opacity=".3" stroke-width="5"/>
+  <path d="M661 80v48m215-48v48m210-48v48m209-48v48" stroke="#829087" stroke-opacity=".5" stroke-width="4"/>
+  <path d="M638 127h868" stroke="#1b2420" stroke-width="13"/>
+  <path d="M646 132h850" stroke="#94a095" stroke-opacity=".45" stroke-width="3"/>
+  <g filter="url(#shadow)">
+    <g transform="translate(665 128) scale(.83)">
+      <path d="M99 0v26m0 0q-14 0-14 13h28q0-13-14-13Z" fill="none" stroke="#b3b7a7" stroke-width="4"/>
+      <use href="#jersey" fill="url(#green-shirt)"/>
+      <path d="M100 45v213" stroke="#f1ede1" stroke-opacity=".88" stroke-width="22"/>
+      <path d="M55 63h18v193H58m84-193h-18v193h15" fill="none" stroke="#d8dfd4" stroke-opacity=".6" stroke-width="4"/>
+      <path d="M80 61h40" stroke="#e5eee4" stroke-opacity=".8" stroke-width="5"/>
+    </g>
+    <g transform="translate(877 128) scale(.83)">
+      <path d="M99 0v26m0 0q-14 0-14 13h28q0-13-14-13Z" fill="none" stroke="#b3b7a7" stroke-width="4"/>
+      <use href="#jersey" fill="url(#blue-shirt)"/>
+      <path d="M55 48 91 254m18-206 36 206" stroke="#f5f4ee" stroke-opacity=".94" stroke-width="19"/>
+      <path d="M79 60h42" stroke="#e4e8e1" stroke-opacity=".75" stroke-width="5"/>
+    </g>
+    <g transform="translate(1088 128) scale(.83)">
+      <path d="M99 0v26m0 0q-14 0-14 13h28q0-13-14-13Z" fill="none" stroke="#b3b7a7" stroke-width="4"/>
+      <use href="#jersey" fill="url(#red-shirt)"/>
+      <path d="M66 42v217m68-217v217" stroke="#f3eee8" stroke-opacity=".93" stroke-width="18"/>
+      <path d="M80 60h40" stroke="#f0e7dc" stroke-opacity=".8" stroke-width="5"/>
+    </g>
+    <g transform="translate(1299 128) scale(.83)">
+      <path d="M99 0v26m0 0q-14 0-14 13h28q0-13-14-13Z" fill="none" stroke="#b3b7a7" stroke-width="4"/>
+      <use href="#jersey" fill="url(#gold-shirt)"/>
+      <path d="M48 74h104" stroke="#183b36" stroke-opacity=".8" stroke-width="11"/>
+      <path d="M80 60h40" stroke="#fff1ca" stroke-opacity=".8" stroke-width="5"/>
+    </g>
+  </g>
+  <g transform="translate(720 369)" filter="url(#shadow)">
+    <path d="M16 13h128l-10 91-54-9-54 9Z" fill="#d8ded8"/>
+    <path d="M16 13h45v82l-45 9Zm83 0h45l-10 91-35-6Z" fill="#35423d"/>
+    <path d="M25 31h34M107 31h28" stroke="#96a399" stroke-width="5"/>
+  </g>
+  <g transform="translate(878 377)" filter="url(#shadow)">
+    <path d="M14 15h146l-7 88q-66 22-132 0Z" fill="#303d38"/>
+    <path d="M87 17v84M26 37h44m39 0h39" stroke="#94a397" stroke-opacity=".7" stroke-width="4"/>
+  </g>
+  <g transform="translate(1098 375)" filter="url(#shadow)">
+    <path d="M17 66q10-34 46-36l47 10 33 34q8 15-6 22H20Q3 89 17 66Z" fill="#e9e7d9"/>
+    <path d="m63 34 12 23m9-20 12 26m8-20 12 26" fill="none" stroke="#426b58" stroke-width="7"/>
+    <path d="M17 75q59 12 125-2" fill="none" stroke="#b8b6a9" stroke-width="4"/>
+  </g>
+  <g transform="translate(1281 371)" filter="url(#shadow)">
+    <circle cx="71" cy="62" r="54" fill="#eeeade"/>
+    <path d="m71 32 21 15-8 26H58l-8-26Zm0-30 12 13m42 17-17 2m-1 55-12-16m-48 16 12-16M17 32l17 2" fill="#28372f"/>
+    <circle cx="71" cy="62" r="54" fill="none" stroke="#a9afa5" stroke-width="3"/>
+  </g>
+  <path d="M612 449h902" stroke="#87948a" stroke-opacity=".24" stroke-width="2"/>
+  <path d="M0 0h1600v540H0z" fill="none" stroke="#bbc4b8" stroke-opacity=".1" stroke-width="2"/>
+</svg>
