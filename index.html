@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5f2">
+    <meta name="description" content="Portafolio de Moisés Giraldo, desarrollador de software e inteligencia artificial en formación.">
+    <title>Moisés Giraldo | Desarrollo de Software e IA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#inicio" aria-label="Moisés Giraldo, ir al inicio">MG<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#tecnologias">Tecnologías</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> En formación · Abierto a aprender</p>
+          <h1 id="hero-title">Moisés<br><span>Giraldo</span></h1>
+          <p class="hero-role">Desarrollo de Software e Inteligencia Artificial</p>
+          <p class="hero-intro">Actualmente estoy en formación y desarrollando proyectos para aplicar mis conocimientos, aprender con cada reto y construir soluciones útiles.</p>
+          <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="portrait" role="img" aria-label="Espacio reservado para una fotografía profesional de Moisés Giraldo">
+          <span class="portrait-index">01 / PERFIL</span>
+          <span class="portrait-monogram" aria-hidden="true">MG</span>
+          <span class="portrait-caption">Fotografía profesional<br>por agregar</span>
+          <span class="portrait-corner" aria-hidden="true"></span>
+        </div>
+        <a class="scroll-cue" href="#sobre-mi"><span aria-hidden="true">↓</span> Desplazar</a>
+      </section>
+
+      <section class="about section-wrap section-rule" id="sobre-mi" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 — Sobre mí</p>
+          <h2 id="about-title">Aprender.<br>Entender. <span>Construir.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">Me interesa el desarrollo de software y la inteligencia artificial, y cómo pueden resolver problemas reales.</p>
+          <p>Estoy en una etapa de formación continua: exploro, pruebo ideas y desarrollo proyectos para llevar lo aprendido a la práctica. Disfruto analizar problemas, aprender de los errores y colaborar con otras personas para encontrar mejores soluciones.</p>
+        </div>
+      </section>
+
+      <section class="stack section-wrap section-rule" id="tecnologias" aria-labelledby="stack-title">
+        <div class="section-heading section-heading-inline">
+          <div><p class="eyebrow">02 — Herramientas</p><h2 id="stack-title">Tecnologías</h2></div>
+          <p class="section-note">Conocimientos en desarrollo y aprendizaje continuo.</p>
+        </div>
+        <ul class="tech-list" aria-label="Tecnologías y herramientas">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>MySQL</li>
+          <li>Git</li><li>GitHub</li><li>Linux</li><li>Windows</li><li>Scrum</li>
+        </ul>
+      </section>
+
+      <section class="projects section-wrap section-rule" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-heading section-heading-inline">
+          <div><p class="eyebrow">03 — En construcción</p><h2 id="projects-title">Proyectos</h2></div>
+          <p class="section-note">Una selección de proyectos personales y ejercicios prácticos.</p>
+        </div>
+        <div class="projects-empty">
+          <span class="empty-mark" aria-hidden="true">+</span>
+          <div><h3>Próximamente</h3><p>Estoy preparando proyectos para compartir aquí.</p></div>
+          <span class="empty-count">0 proyectos publicados</span>
+        </div>
+        <template id="project-template">
+          <article class="project-card">
+            <img src="assets/proyectos/proyecto.webp" alt="" loading="lazy" width="720" height="480">
+            <div class="project-card-copy">
+              <h3>Nombre del proyecto</h3>
+              <p>Descripción breve del problema y la solución.</p>
+              <ul class="project-tech"><li>Tecnología</li></ul>
+              <div class="project-links">
+                <a data-project-url aria-label="Ver proyecto">Ver proyecto <span aria-hidden="true">↗</span></a>
+                <a data-source-url aria-label="Ver código">Ver código <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </template>
+      </section>
+
+      <section class="method section-wrap" aria-labelledby="method-title">
+        <div class="method-top"><p class="eyebrow">04 — Cómo trabajo</p><span class="method-index">UN PROCESO, NO UNA FÓRMULA</span></div>
+        <h2 id="method-title">No necesito tener todas las respuestas desde el principio, <span>pero sí saber cómo buscarlas.</span></h2>
+        <ol class="process-list">
+          <li><span>01</span>Problema</li><li><span>02</span>Analizar</li><li><span>03</span>Investigar</li>
+          <li><span>04</span>Probar</li><li><span>05</span>Aprender</li><li><span>06</span>Resolver</li>
+        </ol>
+      </section>
+
+      <section class="contact section-wrap section-rule" id="contacto" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">05 — Contacto</p>
+          <h2 id="contact-title">Hablemos<span>.</span></h2>
+        </div>
+        <div class="contact-list" aria-label="Canales de contacto por completar">
+          <div class="contact-row"><span>GitHub</span><span class="contact-pending">Enlace por agregar</span><span aria-hidden="true">↗</span></div>
+          <div class="contact-row"><span>LinkedIn</span><span class="contact-pending">Enlace por agregar</span><span aria-hidden="true">↗</span></div>
+          <div class="contact-row"><span>Correo</span><span class="contact-pending">Dirección por agregar</span><span aria-hidden="true">↗</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-name" href="#inicio">Moisés Giraldo</a>
+      <p>Desarrollo de Software e Inteligencia Artificial</p>
+      <a class="back-top" href="#inicio" aria-label="Volver al inicio">↑</a>
+      <span class="footer-copy">© <span id="year">2026</span></span>
+    </footer>
+  </body>
+</html>
