@@ -2,6 +2,8 @@ const menuToggle = document.querySelector('.menu-toggle');
 const siteNav = document.querySelector('#site-nav');
 const year = document.querySelector('#year');
 
+document.documentElement.classList.add('js');
+
 if (year) year.textContent = new Date().getFullYear();
 
 if (menuToggle && siteNav) {

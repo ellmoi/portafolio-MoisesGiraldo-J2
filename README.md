@@ -1,38 +1,27 @@
-# Portafolio de Moisés Giraldo
+# Moisés Giraldo · Portafolio
 
-Portafolio personal multipágina, creado con HTML, CSS y JavaScript vanilla. No necesita compilación, backend ni dependencias; las rutas relativas permiten publicarlo directamente en GitHub Pages.
+Portafolio de un desarrollador de software e inteligencia artificial en formación. Presenta mi perfil, mi forma de trabajar y diez proyectos con acceso a su código y a las demos disponibles.
 
-## Páginas
+## Qué encontrarás
 
-- `index.html`: Inicio
-- `sobre-mi.html`: perfil y enfoque
-- `tecnologias.html`: tecnologías y herramientas
-- `proyectos.html`: selección de proyectos y enlaces por agregar
-- `como-trabajo.html`: proceso de trabajo
-- `contacto.html`: canales de contacto
+- **Perfil:** aprendizaje e intereses en inteligencia artificial, ciberseguridad y computación cuántica.
+- **Proyectos:** diez portadas horizontales con imágenes temáticas, repositorios y cuatro demos enlazadas.
+- **Proceso y contacto:** cómo abordo los problemas y dónde conversar sobre oportunidades.
 
-## Probar localmente
+El diseño se adapta a móvil y permite navegar con teclado. Las portadas son imágenes representativas generadas con IA, no capturas de las aplicaciones.
 
-Abre `index.html` en el navegador. También puedes usar la extensión Live Server de VS Code.
+## Cómo usarlo
 
-## Publicar en GitHub Pages
+Abre `index.html` en el navegador o utiliza Live Server. Está desarrollado con **HTML, CSS y JavaScript vanilla**, sin backend ni compilación.
 
-1. Sube los cambios a la rama `inicio` de este repositorio:
+El contenido está en los archivos HTML; los estilos, en `css/`; las interacciones, en `js/`; y las imágenes, en `assets/`.
 
-   ```sh
-   git add .
-   git commit -m "feat: separar secciones en páginas"
-   git push -u origin inicio
-   ```
+Para publicarlo en GitHub Pages, configura **Settings → Pages → inicio → /(root)** después de integrar los cambios en esa rama.
 
-2. En GitHub, abre **Settings → Pages**. En **Build and deployment**, elige **Deploy from a branch**, selecciona `inicio` y la carpeta `/(root)`, y guarda.
-3. Como el repositorio ya usaba la rama `incio`, conserva esa rama hasta cambiar la rama predeterminada y Pages a `inicio` y confirmar que el sitio nuevo publique correctamente.
-4. Espera a que termine la publicación. GitHub mostrará la URL en **Settings → Pages**.
+## Estado
 
-## Personalizar
+GitHub, LinkedIn y correo están disponibles en Contacto. La demo de Superdeportivos BGA está en revisión; su repositorio sigue accesible. Queda por confirmar la configuración de Pages y documentar el aporte personal y los resultados de cada proyecto.
 
-- La foto del perfil está en `assets/moises-portafolio.webp`; reemplaza ese archivo para actualizarla.
-- Añade el enlace real de cada proyecto cuando esté disponible.
-- Completa los enlaces de GitHub y LinkedIn y la dirección de correo antes de publicar esos canales.
+## Contacto
 
-No se incluyen datos de contacto, enlaces, proyectos ni experiencia que no hayan sido proporcionados.
+[GitHub](https://github.com/ellmoi) · [LinkedIn](https://www.linkedin.com/in/moises-giraldo-7874b9283) · [Correo](mailto:moises10giraldo@gmail.com)
