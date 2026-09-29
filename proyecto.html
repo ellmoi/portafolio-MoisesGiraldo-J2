@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#192c3a">
+    <meta name="description" content="Detalle de un proyecto del portafolio de Moisés Giraldo.">
+    <title>Proyecto | Moisés Giraldo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/visual.css">
+    <script src="js/proyecto.js" defer></script>
+  </head>
+  <body>
+    <main id="project-detail-content" class="project-detail-shell" hidden>
+      <a class="project-detail-back" href="proyectos.html"><span aria-hidden="true">←</span> Todos los proyectos</a>
+      <header class="project-detail-heading">
+        <div><p class="eyebrow">PORTAFOLIO / PROYECTOS</p><h1>Trabajo seleccionado.</h1></div>
+        <p>Una mirada de cerca a un proyecto y a las herramientas que lo hacen posible.</p>
+      </header>
+      <div class="project-detail-grid">
+        <figure class="project-detail-media">
+          <img id="project-detail-image" src="" alt="">
+          <figcaption id="project-detail-index"></figcaption>
+        </figure>
+        <section class="project-detail-copy" aria-labelledby="project-detail-title">
+          <p class="eyebrow">PROYECTO</p>
+          <h2 id="project-detail-title"></h2>
+          <p id="project-detail-description"></p>
+          <ul id="project-detail-tech" class="project-detail-tech" aria-label="Tecnologías utilizadas"></ul>
+          <div class="project-detail-actions">
+            <a id="project-detail-page" class="project-detail-button project-detail-button-primary" target="_blank" rel="noopener noreferrer" hidden>Ver página <span aria-hidden="true">↗</span></a>
+            <span id="project-detail-page-unavailable" class="project-detail-button" aria-disabled="true" hidden>Página no disponible</span>
+            <a id="project-detail-repository" class="project-detail-button" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <main id="project-detail-error" class="project-detail-error" hidden aria-live="polite">
+      <p>No encontramos ese proyecto.</p>
+      <a href="proyectos.html">Volver a todos los proyectos</a>
+    </main>
+  </body>
+</html>
