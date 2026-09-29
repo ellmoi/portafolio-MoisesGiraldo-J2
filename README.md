@@ -1,26 +1,64 @@
-# Moisés Giraldo · Portafolio
+﻿# Moisés Giraldo · Portafolio
 
-Portafolio de un desarrollador de software e inteligencia artificial en formación. Presenta mi perfil, mi forma de trabajar y diez proyectos con acceso a su código y a las demos disponibles.
+Sitio personal para presentar mi perfil técnico, proyectos, proceso de trabajo y canales de contacto.
 
-## Qué encontrarás
+## Funcionalidades
 
-- **Perfil:** aprendizaje e intereses en inteligencia artificial, ciberseguridad y computación cuántica.
-- **Proyectos:** diez portadas horizontales con imágenes temáticas, repositorios y cuatro demos enlazadas.
-- **Proceso y contacto:** cómo abordo los problemas y dónde conversar sobre oportunidades.
+- Inicio con presentación y tecnologías.
+- Sobre mí con áreas técnicas, paneles desplegables y navegación por teclado.
+- Galería de diez proyectos y fichas individuales con repositorios y demos cuando están configuradas.
+- Proceso de trabajo en cuatro etapas.
+- Contacto con validación del formulario y preparación de un borrador mediante `mailto:`. El envío se realiza desde el cliente de correo del visitante; no hay backend.
+- Diseño adaptable, menú móvil y enlace para saltar al contenido.
 
-El diseño se adapta a móvil y permite navegar con teclado. Las portadas son imágenes representativas generadas con IA, no capturas de las aplicaciones.
+Las portadas son ilustraciones representativas; no son capturas de las aplicaciones.
 
-## Cómo usarlo
+## Tecnologías y requisitos
 
-Abre `index.html` en el navegador o utiliza Live Server. Está desarrollado con **HTML, CSS y JavaScript vanilla**, sin backend ni compilación.
+HTML, CSS y JavaScript sin framework, paquetes de producción ni compilación. Google Fonts es un recurso externo; hay fuentes alternativas locales.
 
-El contenido está en los archivos HTML; los estilos, en `css/`; las interacciones, en `js/`; y las imágenes, en `assets/`.
+Para desarrollo se necesita un navegador y Node.js para el servidor local y las comprobaciones de sintaxis. También puede usarse un servidor HTTP como Live Server. No se necesitan credenciales ni variables de entorno.
 
-Para publicarlo en GitHub Pages, configura **Settings → Pages → inicio → /(root)** después de integrar los cambios en esa rama.
+## Ejecutar
 
-## Estado
+```sh
+git clone https://github.com/ellmoi/portafolio-MoisesGiraldo-J2.git
+cd portafolio-MoisesGiraldo-J2
+node scripts/serve.cjs
+```
 
-GitHub, LinkedIn y correo están disponibles en Contacto. La demo de Superdeportivos BGA está en revisión; su repositorio sigue accesible. Queda por confirmar la configuración de Pages y documentar el aporte personal y los resultados de cada proyecto.
+Abrir <http://127.0.0.1:8080>. Detener con `Ctrl+C`. Usar HTTP: las fichas de proyecto cargan `proyectos.html` mediante `fetch` y no funcionan correctamente abriendo archivos con `file://`.
+
+## Estructura
+
+```text
+*.html                 Páginas públicas
+css/                   Estilos compartidos y por página
+js/                    Navegación, áreas técnicas, proyectos y contacto
+assets/                Imágenes del sitio y recursos visuales conservados
+docs/                  Material de referencia
+docs/design/           Procedencia y prompts de las ilustraciones
+scripts/serve.cjs      Servidor local sin dependencias
+.github/               Validación y plantilla de Pull Request
+```
+
+`proyectos.html` es la fuente de datos de las fichas: los atributos `data-project`, `data-project-page` y `data-project-repository` definen sus enlaces. `tecnologias.html` conserva una redirección a Proyectos por compatibilidad.
+
+## Verificación
+
+No hay suite de pruebas, linter de terceros ni build. Comprobar la sintaxis con `node --check` para cada archivo de `js/` y `scripts/`, y ejecutar `git diff --check`.
+
+Antes de integrar, revisar mediante HTTP las páginas modificadas en escritorio y móvil, los enlaces locales, las fichas de proyectos, el menú, las pestañas técnicas y la preparación del borrador de correo. GitHub Actions comprueba sintaxis y espacios en los cambios; no sustituye la revisión del navegador.
+
+## Flujo de trabajo
+
+`main` representa la versión estable. Crear ramas breves por tarea (`feature/`, `fix/`, `refactor/`, `docs/`, `test/`, `chore/`), verificar, realizar commits, publicar y abrir un Pull Request. Integrar únicamente con las verificaciones correctas. No se utiliza `develop`.
+
+Los commits nuevos siguen Conventional Commits con descripción en español, por ejemplo `fix: corregir navegación móvil`. Las reglas de trabajo están en [AGENTS.md](AGENTS.md). El historial anterior se conserva.
+
+## Publicación y estado
+
+El sitio se publica con GitHub Pages desde la raíz de la rama estable `main`; no requiere compilación. La configuración se administra en el repositorio de GitHub. Los enlaces a demos dependen de proyectos externos; Superdeportivos BGA continúa identificado como demo en revisión.
 
 ## Contacto
 
