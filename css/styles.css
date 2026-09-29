@@ -200,40 +200,6 @@ h1 span { color: #648b39; }
 a.contact-row:hover { background: #e2e7df; }
 .site-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 0.4rem; }
 
-/* Proceso de trabajo y resumen visual de Scrum. */
-.work-hero { position: relative; isolation: isolate; overflow: hidden; border-radius: 1rem; background: var(--deep); color: #fff; }
-.work-hero > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 65% center; }
-.work-hero::before { position: absolute; inset: 0; z-index: -1; content: ''; background: linear-gradient(90deg, rgb(15 32 24 / 96%), rgb(15 32 24 / 80%) 40%, rgb(15 32 24 / 5%)); }
-.work-hero-copy { max-width: 36rem; padding: clamp(1.5rem, 4vw, 3rem); }
-.work-hero .eyebrow { color: #d4e8c5; }
-.work-hero h2 { margin-bottom: 1rem; font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.1; letter-spacing: -0.05em; }
-.work-hero h2 span { color: var(--accent); }
-.work-hero-copy > p:last-child { max-width: 27rem; margin: 0; color: #e1e9e2; font-size: 0.9rem; line-height: 1.8; }
-.scrum-section { padding-block: clamp(2.5rem, 5vw, 4rem); }
-.scrum-heading { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 2rem; margin-bottom: 1.5rem; }
-.scrum-heading h2 { margin: 0; max-width: 25rem; font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.15; letter-spacing: -0.04em; }
-.scrum-heading > p { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.8; }
-.scrum-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; padding: 0; margin: 0; list-style: none; }
-.scrum-steps li { padding: 1.25rem; border: 1px solid var(--line); border-radius: 0.8rem; background: rgb(255 255 255 / 70%); }
-.scrum-icon { display: block; width: 3rem; height: 3rem; margin-bottom: 1.25rem; padding: 0.35rem; border-radius: 0.65rem; background: #e8eedf; fill: none; stroke: var(--deep); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.scrum-step-label { display: block; min-height: 2.5em; color: #537039; font: 0.65rem/1.6 var(--mono); }
-.scrum-steps h3 { margin: 0.6rem 0; font-size: 1.05rem; line-height: 1.3; }
-.scrum-steps p { margin: 0; color: var(--muted); font-size: 0.82rem; line-height: 1.75; }
-.scrum-repeat { margin: 1rem 0 2rem; color: var(--deep); font-size: 0.8rem; text-align: center; line-height: 1.7; }
-.scrum-repeat span { margin-right: 0.4rem; font-size: 1.1rem; }
-.scrum-roles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; padding-block: 1.5rem; border-block: 1px solid var(--line); }
-.scrum-roles p { margin: 0; color: var(--muted); font-size: 0.8rem; line-height: 1.7; }
-.scrum-roles strong { display: block; margin-bottom: 0.3rem; color: var(--ink); }
-.work-next { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; margin-top: 2rem; }
-.scrum-source { padding-block: 0.75rem; color: var(--muted); font-size: 0.75rem; text-decoration: underline; text-underline-offset: 0.25rem; }
-@media (max-width: 900px) { .scrum-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 680px) {
-  .scrum-heading { grid-template-columns: 1fr; gap: 1rem; }
-  .work-hero::before { background: rgb(15 32 24 / 80%); }
-  .scrum-roles { grid-template-columns: 1fr; gap: 1rem; }
-}
-@media (max-width: 420px) { .scrum-steps { grid-template-columns: 1fr; } }
-
 /* Portadas panorámicas de todos los repositorios. */
 .repository-gallery { margin-bottom: clamp(3rem, 7vw, 6rem); }
 .repository-gallery-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem 2rem; padding-block: 1rem; border-top: 1px solid var(--line); }

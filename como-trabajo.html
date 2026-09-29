@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/visual.css">
+    <link rel="stylesheet" href="css/proceso.css">
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -24,50 +25,89 @@
         <a class="header-cta" href="contacto.html">Hablemos <span aria-hidden="true">→</span></a>
       </div>
     </header>
-    <main id="contenido">
-      <section class="page-intro section-wrap" aria-labelledby="page-title">
-        <p class="eyebrow">03 — Mi proceso</p>
-        <h1 class="page-title" id="page-title">Cómo trabajo</h1>
-        <p class="page-description">Entender el problema, construir por etapas y mejorar con cada entrega.</p>
-      </section>
-      <section class="work-hero section-wrap" aria-labelledby="method-title">
-        <img src="assets/proceso-scrum.jpg" alt="" width="2172" height="724" decoding="async" fetchpriority="high">
-        <div class="work-hero-copy">
-          <p class="eyebrow">Enfoque ágil · Scrum</p>
-          <h2 id="method-title">Objetivos claros.<br><span>Mejora continua.</span></h2>
-          <p>Me interesa incorporar Scrum a mi formación: organizar prioridades, compartir avances y aprender de la retroalimentación.</p>
+    <main id="contenido" class="process-main">
+      <section class="process-page section-wrap" aria-labelledby="process-title">
+        <div class="process-header">
+          <h1 id="process-title" class="process-title">De tu idea a una<br><span>solución que funciona.</span></h1>
+          <div class="process-intro">
+            <p class="process-kicker"><span class="process-kicker-line"></span> EL PROCESO, EN POCAS PALABRAS</p>
+            <p class="process-summary">Cada proyecto comienza entendiendo qué se quiere resolver. A partir de ahí organizo las necesidades, construyo por etapas y compruebo el resultado para avanzar con claridad y mejorar cuando sea necesario.</p>
+            <div class="process-dots" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="scrum-section section-wrap" aria-labelledby="scrum-title">
-        <div class="scrum-heading">
-          <div><p class="eyebrow">El ciclo, en pocas palabras</p><h2 id="scrum-title">De la idea a una entrega útil.</h2></div>
-          <p>Scrum es un marco de trabajo en equipo. El Product Backlog ordena las necesidades; cada sprint dura un mes o menos y busca un resultado utilizable.</p>
+
+        <div class="process-grid" aria-label="Proceso de trabajo">
+          <article class="process-card">
+            <div class="process-card-head">
+              <span class="process-index">01</span>
+              <span class="process-label">ENTENDER</span>
+            </div>
+            <div class="process-icon process-icon-search" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5M8 9h5M8 12h3"></path></svg>
+            </div>
+            <h2>Primero, entender la necesidad</h2>
+            <p>Antes de escribir código, busco entender el problema, el objetivo y quién utilizará la solución.</p>
+            <div class="process-accent">
+              <span class="process-bullet"></span>
+              <p>Así evitamos desarrollar cosas que realmente no necesitamos.</p>
+            </div>
+          </article>
+
+          <article class="process-card">
+            <div class="process-card-head">
+              <span class="process-index">02</span>
+              <span class="process-label">PLANIFICAR</span>
+            </div>
+            <div class="process-icon process-icon-plan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="4.5" width="14" height="16" rx="2"></rect><rect x="9" y="2.5" width="6" height="4" rx="1"></rect><path d="m8 11 1 1 2-2M13.5 11h2.5m-8 5 1 1 2-2m2.5 1H16"></path></svg>
+            </div>
+            <h2>Convertir la idea en un plan</h2>
+            <p>Organizo las necesidades en funcionalidades y prioridades para saber qué construir primero y mantener claro el alcance.</p>
+            <div class="process-accent">
+              <span class="process-bullet"></span>
+              <p>Así sabes qué estamos haciendo y hacia dónde vamos.</p>
+            </div>
+          </article>
+
+          <article class="process-card">
+            <div class="process-card-head">
+              <span class="process-index">03</span>
+              <span class="process-label">CONSTRUIR</span>
+            </div>
+            <div class="process-icon process-icon-build" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="4" width="19" height="16" rx="2"></rect><path d="M2.5 8h19m-13 4-2.5 2.5L8.5 17m7-5 2.5 2.5-2.5 2.5m-2.5-6-2 7"></path></svg>
+            </div>
+            <h2>Desarrollar y comprobar</h2>
+            <p>Construyo la solución por etapas, probando cada funcionalidad mientras avanzo y corrigiendo problemas antes de sumar más complejidad.</p>
+            <div class="process-accent">
+              <span class="process-bullet"></span>
+              <p>Así puedes ver avances reales, no solo esperar al resultado final.</p>
+            </div>
+          </article>
+
+          <article class="process-card">
+            <div class="process-card-head">
+              <span class="process-index">04</span>
+              <span class="process-label">MEJORAR</span>
+            </div>
+            <div class="process-icon process-icon-improve" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4v16h16M7 15l4-4 4 3 6-8M16 6h5v5"></path></svg>
+            </div>
+            <h2>Revisar, ajustar y evolucionar</h2>
+            <p>Una solución puede mejorar después de verla funcionar. Reviso el resultado, escucho observaciones y realizo ajustes que realmente aporten valor.</p>
+            <div class="process-accent">
+              <span class="process-bullet"></span>
+              <p>Así el proyecto puede evolucionar sin perder su objetivo.</p>
+            </div>
+          </article>
         </div>
-        <ol class="scrum-steps">
-          <li>
-            <svg class="scrum-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="8" width="28" height="34" rx="4"/><path d="M18 8V5h12v3M17 19h14M17 26h14M17 33h8"/></svg>
-            <span class="scrum-step-label">01 · Sprint Planning</span><h3>Acordar el objetivo</h3><p>Elegir qué aportar y cómo hacerlo. El plan queda en el Sprint Backlog.</p>
-          </li>
-          <li>
-            <svg class="scrum-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="28" rx="4"/><path d="m19 17-6 5 6 5m10-10 6 5-6 5M17 42h14M24 36v6"/></svg>
-            <span class="scrum-step-label">02 · Desarrollo y Daily Scrum</span><h3>Construir y ajustar</h3><p>Crear y comprobar la solución. Los desarrolladores revisan el avance en una reunión diaria de 15 minutos.</p>
-          </li>
-          <li>
-            <svg class="scrum-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="7" width="36" height="27" rx="4"/><path d="m16 20 6 6 11-12M24 34v8m-8 0 8-8 8 8"/></svg>
-            <span class="scrum-step-label">03 · Sprint Review</span><h3>Revisar el resultado</h3><p>Inspeccionar lo construido con las personas interesadas y adaptar las próximas prioridades.</p>
-          </li>
-          <li>
-            <svg class="scrum-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M38 18A15 15 0 0 0 12 12l-5 6m0-10v10h10M10 30a15 15 0 0 0 26 6l5-6m0 10V30H31"/></svg>
-            <span class="scrum-step-label">04 · Sprint Retrospective</span><h3>Mejorar el proceso</h3><p>Acordar cambios para trabajar mejor en el siguiente sprint.</p>
-          </li>
-        </ol>
-        <p class="scrum-repeat"><span aria-hidden="true">↻</span> Un nuevo sprint, una nueva oportunidad de mejorar.</p>
-        <div class="scrum-roles" aria-label="Responsabilidades en Scrum">
-          <p><strong>Product Owner</strong>Prioriza el valor del producto.</p>
-          <p><strong>Scrum Master</strong>Ayuda al equipo a aplicar Scrum.</p>
-          <p><strong>Developers</strong>Construyen un incremento que cumple la Definition of Done.</p>
+
+        <div class="process-footer">
+          <span class="process-footer-icon">✦</span>
+          <p>Tu idea marca el objetivo. El proceso la convierte en una solución.</p>
         </div>
-        <div class="work-next"><a class="button button-primary" href="proyectos.html">Explorar mis proyectos <span aria-hidden="true">↗</span></a><a class="scrum-source" href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener noreferrer">Referencia: Guía Scrum <span aria-hidden="true">↗</span></a></div>
       </section>
     </main>
     <footer class="site-footer">
