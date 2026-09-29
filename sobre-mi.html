@@ -34,8 +34,14 @@
       </section>
       <section class="learning-route section-wrap page-content" aria-labelledby="about-title">
         <div class="route-heading"><h2 id="about-title">Mi ruta de aprendizaje</h2></div>
+        <div class="route-category-menu" role="tablist" aria-label="Áreas de aprendizaje">
+          <button class="route-category-tab" id="route-tab-frontend" type="button" role="tab" aria-selected="true" aria-controls="route-panel" tabindex="0" data-route-category="frontend">Frontend</button>
+          <button class="route-category-tab" id="route-tab-backend" type="button" role="tab" aria-selected="false" aria-controls="route-panel" tabindex="-1" data-route-category="backend">Backend</button>
+          <button class="route-category-tab" id="route-tab-sistemas" type="button" role="tab" aria-selected="false" aria-controls="route-panel" tabindex="-1" data-route-category="sistemas">Sistemas</button>
+        </div>
+        <div class="route-panel" id="route-panel" role="tabpanel" aria-labelledby="route-tab-frontend" tabindex="0">
         <ol class="route-track">
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="frontend">
             <details class="route-node" id="ruta-web" name="learning-route">
               <summary aria-controls="detail-web"><span class="route-number">01</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Desarrollo Web</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-web">
@@ -48,7 +54,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="frontend">
             <details class="route-node" id="ruta-javascript" name="learning-route">
               <summary aria-controls="detail-javascript"><span class="route-number">02</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">JavaScript</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-javascript">
@@ -61,7 +67,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="backend">
             <details class="route-node" id="ruta-python" name="learning-route">
               <summary aria-controls="detail-python"><span class="route-number">03</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Python</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-python">
@@ -74,7 +80,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="backend">
             <details class="route-node" id="ruta-datos" name="learning-route">
               <summary aria-controls="detail-datos"><span class="route-number">04</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Bases de Datos</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-datos">
@@ -87,7 +93,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="backend">
             <details class="route-node" id="ruta-ia" name="learning-route">
               <summary aria-controls="detail-ia"><span class="route-number">05</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Python + IA</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-ia">
@@ -100,7 +106,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="backend">
             <details class="route-node" id="ruta-java" name="learning-route">
               <summary aria-controls="detail-java"><span class="route-number">06</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Java</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-java">
@@ -113,7 +119,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="backend">
             <details class="route-node" id="ruta-spring" name="learning-route">
               <summary aria-controls="detail-spring"><span class="route-number">07</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Spring Boot</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-spring">
@@ -126,7 +132,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="sistemas">
             <details class="route-node" id="ruta-sistemas" name="learning-route">
               <summary aria-controls="detail-sistemas"><span class="route-number">08</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Sistemas</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-sistemas">
@@ -139,7 +145,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="sistemas">
             <details class="route-node" id="ruta-herramientas" name="learning-route">
               <summary aria-controls="detail-herramientas"><span class="route-number">09</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Herramientas</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-herramientas">
@@ -152,7 +158,7 @@
               </div>
             </details>
           </li>
-          <li class="route-stop">
+          <li class="route-stop" data-route-category="sistemas">
             <details class="route-node" id="ruta-seguridad" name="learning-route">
               <summary aria-controls="detail-seguridad"><span class="route-number">10</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Ciberseguridad</span><span class="route-expand" aria-hidden="true">+</span></summary>
               <div class="route-detail" id="detail-seguridad">
@@ -166,6 +172,7 @@
             </details>
           </li>
         </ol>
+        </div>
       </section>
     </main>
     <footer class="site-footer">

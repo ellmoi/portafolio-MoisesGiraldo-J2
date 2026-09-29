@@ -2,9 +2,12 @@
   const route = document.querySelector('.learning-route');
   if (!route) return;
   const nodes = [...route.querySelectorAll('.route-node')];
+  const routeStops = [...route.querySelectorAll('.route-stop')];
+  const categoryTabs = [...route.querySelectorAll('.route-category-tab')];
   const cyberNodes = [...route.querySelectorAll('.cyber-node')];
   const hover = window.matchMedia('(hover: hover) and (pointer: fine)');
   let preview = null;
+  let activeCategory = null;
 
   function setNodeExpanded(node, expanded) {
     const summary = node.querySelector(':scope > summary');
@@ -26,6 +29,40 @@
     if (node.id === 'ruta-seguridad') closeCyberNodes();
     setNodeExpanded(node, true);
   }
+
+  function setRouteCategory(category) {
+    if (activeCategory === category) return;
+    activeCategory = category;
+    routeStops.forEach(stop => { stop.hidden = stop.dataset.routeCategory !== category; });
+    nodes.forEach(closeNode);
+    categoryTabs.forEach(tab => {
+      const selected = tab.dataset.routeCategory === category;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      if (selected) document.querySelector('#route-panel').setAttribute('aria-labelledby', tab.id);
+    });
+    preview = null;
+  }
+
+  categoryTabs.forEach((tab, index) => {
+    tab.addEventListener('pointerenter', event => {
+      if (hover.matches && event.pointerType === 'mouse') setRouteCategory(tab.dataset.routeCategory);
+    });
+    tab.addEventListener('click', () => setRouteCategory(tab.dataset.routeCategory));
+    tab.addEventListener('keydown', event => {
+      const next = event.key === 'ArrowRight' ? (index + 1) % categoryTabs.length
+        : event.key === 'ArrowLeft' ? (index - 1 + categoryTabs.length) % categoryTabs.length
+          : event.key === 'Home' ? 0
+            : event.key === 'End' ? categoryTabs.length - 1
+              : -1;
+      if (next < 0) return;
+      event.preventDefault();
+      categoryTabs[next].focus();
+      setRouteCategory(categoryTabs[next].dataset.routeCategory);
+    });
+  });
+
+  setRouteCategory('frontend');
 
   nodes.forEach(node => {
     const summary = node.querySelector('summary');
@@ -96,6 +133,7 @@
       const target = document.getElementById(link.dataset.routeTarget);
       if (!target || !nodes.includes(target)) return;
       event.preventDefault();
+      setRouteCategory(target.closest('.route-stop').dataset.routeCategory);
       openNode(target);
       preview = null;
       target.querySelector('summary').focus({ preventScroll: true });

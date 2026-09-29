@@ -242,10 +242,12 @@ a.contact-row:hover { background: #e2e7df; }
 .repository-cover { position: relative; min-width: 0; min-height: 260px; overflow: hidden; border: 1px solid rgb(185 201 212 / 18%); border-radius: 0.85rem; background: #15241f; color: #fff; box-shadow: 0 8px 24px rgb(25 38 32 / 8%); }
 .repository-cover-link { position: absolute; inset: 0; display: block; overflow: hidden; color: inherit; text-decoration: none; }
 .repository-cover-image { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 300ms ease; }
+.repository-cover-link::before { position: absolute; inset: auto 0 0; z-index: 1; height: 38%; content: ''; background: linear-gradient(transparent, rgb(0 0 0 / 74%)); }
 .repository-cover-link::after { position: absolute; inset: 0; z-index: 1; content: ''; background: linear-gradient(90deg, rgb(8 17 14 / 94%) 0%, rgb(8 17 14 / 83%) 32%, rgb(8 17 14 / 35%) 66%, rgb(8 17 14 / 8%) 100%); opacity: 0; transition: opacity 220ms ease; }
-.repository-cover-content { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; max-width: 42rem; padding: clamp(1.5rem, 3vw, 2.25rem); opacity: 0; transform: translateY(0.5rem); transition: opacity 200ms ease, transform 200ms ease; }
+.repository-cover-content { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; max-width: 42rem; padding: clamp(1.5rem, 3vw, 2.25rem); }
+.repository-cover-content > :not(h2) { opacity: 0; transform: translateY(0.35rem); transition: opacity 200ms ease, transform 200ms ease; }
 .repository-index { display: block; margin-bottom: 0.85rem; color: #d0e4c3; font: 0.65rem var(--mono); letter-spacing: 0.1em; }
-.repository-cover h2 { margin: 0 0 0.65rem; font-size: clamp(1.65rem, 3.3vw, 2.65rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.045em; }
+.repository-cover h2 { position: absolute; right: 1.5rem; bottom: 1.2rem; left: 1.5rem; margin: 0; color: #fff; font-size: clamp(1.2rem, 2.4vw, 1.65rem); font-weight: 700; line-height: 1.15; text-shadow: 0 1px 8px rgb(0 0 0 / 60%); }
 .repository-cover-content > p { max-width: 30rem; margin-bottom: 1rem; color: #e2e8e3; font-size: 0.85rem; line-height: 1.65; }
 .repository-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 0.8rem; padding: 0; list-style: none; }
 .repository-tech li { padding: 0.3rem 0.5rem; border: 1px solid rgb(255 255 255 / 28%); border-radius: 0.25rem; background: rgb(8 17 14 / 45%); color: #edf4e9; font: 0.65rem var(--mono); }
@@ -254,9 +256,9 @@ a.contact-row:hover { background: #e2e7df; }
 @media (hover: hover) {
   .repository-cover-link:hover .repository-cover-image { transform: scale(1.035); }
   .repository-cover-link:hover::after { opacity: 1; }
-  .repository-cover-link:hover .repository-cover-content { opacity: 1; transform: translateY(0); }
+  .repository-cover-link:hover .repository-cover-content > :not(h2) { opacity: 1; transform: translateY(0); }
 }
-.repository-cover-link:focus-visible::after, .repository-cover-link:focus-visible .repository-cover-content { opacity: 1; transform: translateY(0); }
+.repository-cover-link:focus-visible::after, .repository-cover-link:focus-visible .repository-cover-content > :not(h2) { opacity: 1; transform: translateY(0); }
 @media (max-width: 680px) {
   .repository-cover { min-height: 300px; }
   .repository-cover-image { object-position: 70% center; }
