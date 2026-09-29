@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#192c3a">
     <meta name="description" content="Conoce el enfoque y los intereses de Moisés Giraldo en desarrollo de software e inteligencia artificial.">
-    <title>Sobre mí | Moisés Giraldo</title>
+    <title>Mi ruta de aprendizaje | Moisés Giraldo</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/visual.css">
+    <link rel="stylesheet" href="css/ruta.css">
+    <script src="js/ruta.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -20,31 +23,163 @@
           <a href="proyectos.html">Proyectos</a>
           <a href="como-trabajo.html">Cómo trabajo</a><a href="contacto.html">Contacto</a>
         </nav>
+        <a class="header-cta" href="contacto.html">Hablemos <span aria-hidden="true">→</span></a>
       </div>
     </header>
-    <main id="contenido">
+    <main id="contenido" class="learning-page">
       <section class="page-intro section-wrap" aria-labelledby="page-title">
-        <p class="eyebrow">01 — Perfil</p>
-        <h1 class="page-title" id="page-title">Sobre mí</h1>
-        <p class="page-description">Desarrollo de Software e Inteligencia Artificial, actualmente en formación.</p>
+        <p class="eyebrow">01 — Mi ruta</p>
+        <h1 class="page-title" id="page-title">Aprender.<br>Aplicar.<br><span>Construir.</span></h1>
+        <p class="page-description">Mi formación no se limita a aprender tecnologías de forma aislada. Busco entender cómo se conectan para construir soluciones cada vez más completas.</p>
       </section>
-      <section class="about page-content section-wrap section-rule" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">Aprender · Entender · Construir</p>
-          <h2 id="about-title">Aprender.<br>Entender. <span>Construir.</span></h2>
-        </div>
-        <div class="about-copy">
-          <p class="lead">Me interesa el desarrollo de software y la inteligencia artificial, y cómo pueden resolver problemas reales.</p>
-          <p>Estoy en una etapa de formación continua: exploro, pruebo ideas y desarrollo proyectos para llevar lo aprendido a la práctica. Disfruto analizar problemas, aprender de los errores y colaborar con otras personas para encontrar mejores soluciones.</p>
-          <p>Mi práctica actual se centra en proyectos web con HTML, CSS y JavaScript. La inteligencia artificial es un área de interés y formación que quiero seguir explorando.</p>
-          <p>También me interesan la ciberseguridad y la computación cuántica. Quiero comprender cómo proteger los sistemas y la información, y explorar nuevas formas de abordar problemas computacionales.</p>
-          <a class="button button-secondary" href="proyectos.html">Explorar mi trabajo <span aria-hidden="true">↗</span></a>
-        </div>
+      <section class="learning-route section-wrap page-content" aria-labelledby="about-title">
+        <div class="route-heading"><h2 id="about-title">Mi ruta de aprendizaje</h2></div>
+        <ol class="route-track">
+          <li class="route-stop">
+            <details class="route-node" id="ruta-web" name="learning-route">
+              <summary aria-controls="detail-web"><span class="route-number">01</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Desarrollo Web</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-web">
+
+                <p class="route-description">Construcción de interfaces web estructuradas, adaptables y accesibles.</p>
+                <ul class="route-topics"><li>HTML</li><li>CSS</li><li>Responsive Design</li><li>Semántica HTML</li><li>Accesibilidad</li><li>Interfaces web</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-javascript" data-route-target="ruta-javascript">Desarrollo Web → JavaScript</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-javascript" name="learning-route">
+              <summary aria-controls="detail-javascript"><span class="route-number">02</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">JavaScript</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-javascript">
+
+                <p class="route-description">Interactividad, lógica y comportamiento para aplicaciones web.</p>
+                <ul class="route-topics"><li>Fundamentos</li><li>Lógica</li><li>DOM</li><li>Eventos</li><li>Módulos</li><li>APIs</li><li>JSON · Formato e intercambio de datos</li><li>localStorage · Persistencia del lado del navegador</li><li>Persistencia del lado del cliente</li></ul>
+
+
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-python" name="learning-route">
+              <summary aria-controls="detail-python"><span class="route-number">03</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Python</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-python">
+
+                <p class="route-description">Programación, automatización y construcción de lógica para resolver problemas.</p>
+                <ul class="route-topics"><li>Fundamentos</li><li>Estructuras de datos</li><li>Funciones</li><li>POO</li><li>Manejo de archivos</li><li>Automatización</li><li>Resolución de problemas</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-ia" data-route-target="ruta-ia">Python → Python + IA</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-datos" name="learning-route">
+              <summary aria-controls="detail-datos"><span class="route-number">04</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Bases de Datos</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-datos">
+
+                <p class="route-description">Diseño, organización y consulta de información utilizada por aplicaciones.</p>
+                <ul class="route-topics"><li>Modelado de datos</li><li>SQL</li><li>MySQL</li><li>Relaciones</li><li>CRUD</li><li>JOIN</li><li>GROUP BY</li><li>Consultas</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-python" data-route-target="ruta-python">Bases de Datos → Python</a><a href="#ruta-spring" data-route-target="ruta-spring">Bases de Datos → Spring Boot</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-ia" name="learning-route">
+              <summary aria-controls="detail-ia"><span class="route-number">05</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Python + IA</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-ia">
+                <p class="route-status">En formación</p>
+                <p class="route-description">Ruta de formación orientada a aplicar Python en soluciones relacionadas con inteligencia artificial.</p>
+                <ul class="route-topics"><li>Python aplicado</li><li>Manejo de datos</li><li>Fundamentos de Inteligencia Artificial</li><li>Modelos</li><li>Integración de IA en aplicaciones</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-python" data-route-target="ruta-python">Conecta con Python</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-java" name="learning-route">
+              <summary aria-controls="detail-java"><span class="route-number">06</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Java</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-java">
+                <p class="route-status">Próximo</p>
+                <p class="route-description">Fundamentos de programación orientada a objetos y desarrollo de aplicaciones con Java.</p>
+                <ul class="route-topics"><li>Fundamentos</li><li>Sintaxis</li><li>POO</li><li>Estructuras</li><li>Aplicaciones</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-spring" data-route-target="ruta-spring">Java → Spring Boot</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-spring" name="learning-route">
+              <summary aria-controls="detail-spring"><span class="route-number">07</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Spring Boot</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-spring">
+                <p class="route-status">En formación</p>
+                <p class="route-description">Ruta para llevar los fundamentos de Java al desarrollo de aplicaciones backend y APIs REST.</p>
+                <ul class="route-topics"><li>Fundamentos de Spring Boot</li><li>Arquitectura por capas</li><li>APIs REST</li><li>Controladores</li><li>Servicios</li><li>Repositorios</li><li>Inyección de dependencias</li><li>Spring Data JPA</li><li>Conexión con bases de datos</li><li>CRUD</li><li>Peticiones HTTP</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-java" data-route-target="ruta-java">Java → Spring Boot</a><a href="#ruta-datos" data-route-target="ruta-datos">Conecta con Bases de Datos</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-sistemas" name="learning-route">
+              <summary aria-controls="detail-sistemas"><span class="route-number">08</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Sistemas</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-sistemas">
+
+                <p class="route-description">Comprensión y uso de sistemas operativos y sus herramientas fundamentales.</p>
+                <ul class="route-topics"><li>Linux</li><li>Windows</li><li>CLI</li><li>Sistema de archivos</li><li>Permisos</li><li>Instalación y configuración</li><li>Troubleshooting básico</li></ul>
+
+                <div class="route-relations" aria-label="Áreas relacionadas"><a href="#ruta-seguridad" data-route-target="ruta-seguridad">Sistemas → Ciberseguridad</a></div>
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-herramientas" name="learning-route">
+              <summary aria-controls="detail-herramientas"><span class="route-number">09</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Herramientas</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-herramientas">
+
+                <p class="route-description">Herramientas utilizadas para organizar, versionar y colaborar en proyectos.</p>
+                <ul class="route-topics"><li>Git</li><li>GitHub</li><li>Control de versiones</li><li>Ramas</li><li>Repositorios</li><li>Colaboración</li><li>Conventional Commits</li></ul>
+                <p class="route-relation-note">↔ Herramientas transversales a toda la ruta.</p>
+
+
+              </div>
+            </details>
+          </li>
+          <li class="route-stop">
+            <details class="route-node" id="ruta-seguridad" name="learning-route">
+              <summary aria-controls="detail-seguridad"><span class="route-number">10</span><span class="route-dot" aria-hidden="true"></span><span class="route-name">Ciberseguridad</span><span class="route-expand" aria-hidden="true">+</span></summary>
+              <div class="route-detail" id="detail-seguridad">
+                <p class="route-status">Ruta de aprendizaje</p>
+                <p class="route-description">Esta es la ruta que estoy construyendo, no una lista de conocimientos dominados.</p>
+
+
+
+                <ol class="cyber-route" aria-label="Ruta de aprendizaje en ciberseguridad"><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">01</span><span>Fundamentos TI</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>Hardware</li><li>Conectividad</li><li>Troubleshooting</li><li>Fundamentos de redes</li></ul></details></li><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">02</span><span>Sistemas</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>Linux</li><li>Windows</li><li>CLI</li><li>Archivos</li><li>Permisos</li><li>Configuración</li><li>Hardening</li></ul></details></li><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">03</span><span>Redes</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>TCP/IP</li><li>Modelo OSI</li><li>Subnetting</li><li>DNS</li><li>DHCP</li><li>Puertos</li><li>Protocolos</li><li>VPN</li><li>VLAN</li><li>Routing</li><li>Nmap</li><li>Wireshark</li></ul></details></li><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">04</span><span>Fundamentos de seguridad</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>CIA Triad</li><li>Autenticación</li><li>Autorización</li><li>MFA / 2FA</li><li>Criptografía</li><li>Zero Trust</li><li>Firewalls</li><li>IDS / IPS</li><li>Gestión de vulnerabilidades</li></ul></details></li><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">05</span><span>Seguridad ofensiva y defensiva</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>OWASP</li><li>Reconocimiento</li><li>Vulnerabilidades</li><li>Pentesting</li><li>Hardening</li><li>Threat Hunting</li><li>Incident Response</li><li>SIEM</li><li>Logs</li></ul></details></li><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">06</span><span>Cloud Security</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>SaaS</li><li>PaaS</li><li>IaaS</li><li>AWS</li><li>Azure</li><li>GCP</li><li>Seguridad Cloud</li><li>Almacenamiento</li><li>Conceptos de despliegue</li></ul></details></li><li><details class="cyber-node" name="cyber-route"><summary><span class="route-number">07</span><span>Práctica</span><span class="route-expand" aria-hidden="true">+</span></summary><ul class="route-topics"><li>CTFs</li><li>Hack The Box</li><li>TryHackMe</li><li>picoCTF</li><li>Laboratorios</li></ul></details></li></ol>
+              </div>
+            </details>
+          </li>
+        </ol>
       </section>
     </main>
     <footer class="site-footer">
-      <a class="footer-name" href="index.html">Moisés Giraldo</a><p>Desarrollo de Software e Inteligencia Artificial</p>
-      <a class="back-top" href="index.html" aria-label="Volver al inicio">↑</a><span class="footer-copy">© <span id="year">2026</span></span>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div><a class="footer-name" href="index.html">Moisés Giraldo<span aria-hidden="true">.</span></a><p>Desarrollo de Software e Inteligencia Artificial</p></div>
+          <nav class="footer-links" aria-label="Perfiles y contacto">
+            <a href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/moises-giraldo-7874b9283" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:moises10giraldo@gmail.com">Correo ↗</a>
+          </nav>
+        </div>
+        <div class="footer-bottom"><span class="footer-copy">© <span id="year">2026</span> Moisés Giraldo</span><a class="back-top" href="index.html" aria-label="Volver al inicio">↑</a></div>
+      </div>
     </footer>
   </body>
 </html>

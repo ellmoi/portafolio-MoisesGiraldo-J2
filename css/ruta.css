@@ -1,0 +1,55 @@
+/* Exclusivo de Sobre mí; reutiliza la identidad compartida sin alterarla. */
+.learning-page .page-title { line-height: 1.05; }
+.learning-page .page-description { max-width: 40rem; }
+.learning-route .route-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 2rem; padding-bottom: 1.5rem; }
+.learning-route .route-heading h2 { margin: 0; font-size: 0.8rem; font-family: var(--mono); font-weight: 400; text-transform: uppercase; letter-spacing: 0.06em; }
+.learning-route .route-track { list-style: none; padding: 0; margin: 0; }
+.learning-route .route-stop { position: relative; min-width: 0; }
+.learning-route .route-stop::before { content: ''; position: absolute; left: 4.25rem; top: 0; bottom: 0; width: 1px; background: var(--line); }
+.learning-route .route-stop:first-child::before { top: 2.5rem; }
+.learning-route .route-stop:last-child::before { bottom: auto; height: 2.5rem; }
+.learning-route .route-node { position: relative; scroll-margin-top: 7rem; }
+.learning-route summary { list-style: none; cursor: pointer; }
+.learning-route summary::-webkit-details-marker { display: none; }
+.learning-route .route-node > summary { display: grid; grid-template-columns: 3rem 1.5rem minmax(0, 1fr) 1.5rem; align-items: center; gap: 0.5rem; min-height: 5rem; padding-block: 1rem; transition: color 220ms ease, opacity 220ms ease; }
+.learning-route .route-number { color: var(--muted); font: 0.75rem/1.5 var(--mono); }
+.learning-route .route-dot { z-index: 1; justify-self: center; width: 0.6rem; height: 0.6rem; border: 1px solid var(--accent); border-radius: 50%; background: var(--paper); transition: background 220ms ease, transform 220ms ease; }
+.learning-route .route-name { padding-left: 1.25rem; font-size: clamp(1.2rem, 2.4vw, 1.75rem); font-weight: 600; line-height: 1.4; letter-spacing: -0.025em; }
+.learning-route .route-expand { color: var(--accent); font: 1.2rem/1 var(--mono); text-align: center; transition: transform 220ms ease; }
+.learning-route .route-node[open] > summary { color: var(--accent); }
+.learning-route .route-node[open] > summary .route-dot { transform: scale(1.25); background: var(--accent); }
+.learning-route details[open] > summary > .route-expand { transform: rotate(45deg); }
+.learning-route summary:focus-visible, .learning-route a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 0.2rem; }
+.learning-route .route-detail { margin-left: 6.75rem; padding: 0.25rem 0 2rem; max-width: 48rem; animation: route-reveal 220ms ease; }
+.learning-route .route-description { color: var(--ink); font-size: 1rem; line-height: 1.8; max-width: 42rem; }
+.learning-route .route-status { color: var(--accent); font: 0.7rem/1.7 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+.learning-route .route-topics { display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; list-style: none; margin: 0; padding: 0; }
+.learning-route .route-topics li { color: var(--muted); font-size: 0.9rem; line-height: 1.8; overflow-wrap: anywhere; }
+.learning-route .route-topics li::before { content: '·'; margin-right: 0.5rem; color: var(--accent); }
+.learning-route .route-relations { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.learning-route .route-relations a { color: var(--accent); display: inline-flex; align-items: center; min-height: 44px; font-size: 0.8rem; line-height: 1.7; text-decoration: underline; text-underline-offset: 0.3rem; }
+.learning-route .route-relation-note { margin: 1.5rem 0 0; color: var(--accent); font-size: 0.85rem; line-height: 1.7; }
+.learning-route .cyber-route { list-style: none; padding: 0 0 0 1rem; margin: 1.5rem 0 0 0.25rem; border-left: 1px solid var(--line); }
+.learning-route .cyber-node > summary { position: relative; display: grid; grid-template-columns: 2rem minmax(0, 1fr) 1.25rem; align-items: center; gap: 0.6rem; min-height: 3.75rem; padding-block: 0.75rem; font-size: 0.95rem; line-height: 1.6; }
+.learning-route .cyber-node > summary::before { position: absolute; content: ''; left: -1.25rem; width: 0.45rem; height: 0.45rem; background: var(--accent); border-radius: 50%; }
+.learning-route .cyber-node > .route-topics { padding: 0.25rem 0 1.25rem 2.6rem; animation: route-reveal 220ms ease; }
+@media (hover: hover) and (pointer: fine) {
+  .learning-route .route-track:has(.route-node[open]) .route-node:not([open]) > summary { opacity: 0.8; }
+  .learning-route .route-node > summary:hover { color: var(--accent); opacity: 1; }
+}
+@media (min-width: 1024px) {
+  .learning-route .route-detail { margin-left: 32%; }
+  .learning-route .route-node[open]::after { position: absolute; content: ''; pointer-events: none; left: 4.25rem; top: 5rem; width: calc(32% - 5.25rem); height: 1px; background: var(--line); }
+}
+@media (max-width: 680px) {
+  .learning-route .route-stop::before { left: 2.75rem; }
+  .learning-route .route-node > summary { grid-template-columns: 1.75rem 1rem minmax(0, 1fr) 1.25rem; }
+  .learning-route .route-name { padding-left: 0.5rem; }
+  .learning-route .route-detail { margin-left: 3.75rem; }
+  .learning-route .route-topics { gap: 0.4rem 1rem; }
+  .learning-route .cyber-node > .route-topics { padding-left: 0; }
+}
+@keyframes route-reveal { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .learning-route *, .learning-route *::before { animation: none !important; transition: none !important; }
+}
