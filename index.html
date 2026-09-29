@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/inicio.css">
     <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/visual.css">
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -25,6 +26,7 @@
           <a href="como-trabajo.html">Cómo trabajo</a>
           <a href="contacto.html">Contacto</a>
         </nav>
+        <a class="header-cta" href="contacto.html">Hablemos <span aria-hidden="true">→</span></a>
       </div>
     </header>
 
@@ -34,7 +36,7 @@
           <p class="eyebrow"><span class="status-dot"></span> En formación · Abierto a aprender</p>
           <h1 id="hero-title">Moisés<br><span>Giraldo</span></h1>
           <p class="hero-role">Desarrollo de Software e Inteligencia Artificial</p>
-          <p class="hero-intro">Desarrollo proyectos web con HTML, CSS y JavaScript mientras me formo en software e inteligencia artificial. Aquí puedes explorar las interfaces y revisar el código de mis proyectos.</p>
+          <p class="hero-intro">Transformo lo que aprendo en proyectos de software. Mi formación combina desarrollo web, Python y SQL, con especial interés en ciberseguridad y en construir soluciones útiles y seguras. Java es el próximo paso en mi ruta de aprendizaje.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="proyectos.html">Ver proyectos <span aria-hidden="true">↘</span></a>
             <a class="button button-secondary" href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer">Mi GitHub <span aria-hidden="true">↗</span></a>
@@ -42,8 +44,6 @@
         </div>
         <div class="portrait">
           <img class="portrait-photo" src="assets/moises-portafolio.webp" alt="Retrato de Moisés Giraldo" fetchpriority="high" decoding="async">
-          <span class="portrait-index">01 / PERFIL</span>
-          <span class="portrait-corner" aria-hidden="true"></span>
         </div>
       </section>
       <section class="technologies section-wrap" id="tecnologias" aria-labelledby="technologies-title">
@@ -52,9 +52,21 @@
             <p class="eyebrow">Aprender · Aplicar · Mejorar</p>
             <h2 id="technologies-title">Tecnologías</h2>
           </div>
-          <p>Herramientas que aplico en mis proyectos web.</p>
+          <p>Desarrollo web, programación y datos: una formación en constante evolución.</p>
         </div>
-        <ul class="skill-list" aria-label="Tecnologías aplicadas en mis proyectos">
+        <ul class="skill-list" aria-label="Tecnologías y ruta de aprendizaje">
+          <li>
+            <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M20 5h7a6 6 0 0 1 6 6v9H17a6 6 0 0 0-6 6v3M20 35h-7a6 6 0 0 1-6-6v-9h16a6 6 0 0 0 6-6v-3"/><circle cx="24" cy="11" r="1"/><circle cx="16" cy="29" r="1"/></svg>
+            <div><h3>Python</h3><p>Programación · En formación</p></div>
+          </li>
+          <li>
+            <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><ellipse cx="20" cy="9" rx="12" ry="5"/><path d="M8 9v22c0 7 24 7 24 0V9M8 20c0 7 24 7 24 0"/></svg>
+            <div><h3>SQL</h3><p>Bases de datos · En formación</p></div>
+          </li>
+          <li>
+            <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M9 17h19v9a8 8 0 0 1-8 8h-3a8 8 0 0 1-8-8Zm19 2h3a5 5 0 0 1 0 10h-4M16 12c-5-4 5-5 0-9m7 9c-5-4 5-5 0-9M7 37h25"/></svg>
+            <div><h3>Java</h3><p>Próximo en mi ruta</p></div>
+          </li>
           <li>
             <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M8 5h24l-2 27-10 3-10-3Z"/><path d="m16 14-5 6 5 6m8-12 5 6-5 6"/></svg>
             <div><h3>HTML</h3><p>Estructura web</p></div>
@@ -72,10 +84,17 @@
     </main>
 
     <footer class="site-footer">
-      <a class="footer-name" href="index.html">Moisés Giraldo</a>
-      <p>Desarrollo de Software e Inteligencia Artificial</p>
-      <a class="back-top" href="index.html" aria-label="Volver al inicio">↑</a>
-      <span class="footer-copy">© <span id="year">2026</span></span>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div><a class="footer-name" href="index.html">Moisés Giraldo<span aria-hidden="true">.</span></a><p>Desarrollo de Software e Inteligencia Artificial</p></div>
+          <nav class="footer-links" aria-label="Perfiles y contacto">
+            <a href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/moises-giraldo-7874b9283" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:moises10giraldo@gmail.com">Correo ↗</a>
+          </nav>
+        </div>
+        <div class="footer-bottom"><span class="footer-copy">© <span id="year">2026</span> Moisés Giraldo</span><a class="back-top" href="index.html" aria-label="Volver al inicio">↑</a></div>
+      </div>
     </footer>
   </body>
 </html>
