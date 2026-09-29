@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-  color-scheme: light;
-  --paper: #f4f5f2;
-  --ink: #202624;
-  --muted: #626b65;
-  --line: #d9ddd7;
-  --accent: #b4ee5c;
-  --deep: #263c34;
+  color-scheme: dark;
+  --paper: #192c3a;
+  --ink: #edf3f7;
+  --muted: #b9c9d4;
+  --line: #39505f;
+  --accent: #96d8ca;
+  --deep: #213746;
+  --surface: #213746;
   --mono: 'DM Mono', 'Courier New', monospace;
   --sans: 'Manrope', 'Segoe UI', sans-serif;
   font-family: var(--sans);
@@ -23,7 +24,7 @@ body { width: 100%; margin: 0; min-width: 0; min-height: 100svh; display: flex; 
 main { flex: 1; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
-::selection { color: var(--ink); background: var(--accent); }
+::selection { color: var(--paper); background: var(--accent); }
 :focus-visible { outline: 2px solid #537c33; outline-offset: 4px; }
 
 .skip-link { position: absolute; z-index: 10; top: 0.5rem; left: 0.5rem; padding: 0.75rem 1rem; background: var(--accent); transform: translateY(-150%); }
@@ -280,4 +281,67 @@ a.contact-row:hover { background: #e2e7df; }
   .js .menu-toggle { display: flex; }
   .js .site-nav { position: absolute; display: none; }
   .js .site-nav.is-open { display: flex; }
+}
+
+/* Tema compartido por todas las páginas: petróleo, slate y menta. */
+body { background: radial-gradient(ellipse at 85% 15%, rgb(74 118 139 / 12%), transparent 50%), var(--paper); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.skip-link { color: var(--paper); }
+.site-header { background: rgb(25 44 58 / 97%); border-bottom-color: rgb(185 201 212 / 12%); backdrop-filter: blur(16px); }
+.header-inner { width: min(100% - 3rem, 1080px); min-height: 5rem; gap: 1rem; }
+.wordmark { padding: 0; border: 0; border-radius: 0; background: transparent; color: var(--ink); font-size: 1.35rem; }
+.wordmark span, .contact h2 span, .section-heading h2 span, h1 span { color: var(--accent); }
+.site-nav { gap: clamp(0.2rem, 1.2vw, 1rem); }
+.site-nav a { padding: 0.85rem 0.65rem; border-radius: 0.3rem; color: var(--muted); font-size: 0.875rem; transition: color 180ms ease, background 180ms ease; }
+.site-nav a:hover { color: var(--ink); background: rgb(185 201 212 / 6%); }
+.site-nav a[aria-current="page"] { background: transparent; color: var(--ink); text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 0.55rem; }
+.menu-toggle { border-color: var(--line); border-radius: 0.5rem; }
+.section-wrap { width: min(100% - 3rem, 1080px); }
+.page-description, .hero-intro, .about-copy p, .project-summary { color: var(--muted); font-size: 1rem; }
+.eyebrow { font-size: 0.75rem; }
+.page-title { font-size: clamp(2.8rem, 6vw, 4.5rem); }
+.about, .contact { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.about-copy { min-width: 0; }
+.about-copy .lead { color: var(--ink); }
+.section-heading h2, .contact h2 { font-size: clamp(2.3rem, 5vw, 4rem); }
+.button { min-height: 3.1rem; padding: 0.85rem 1.25rem; border: 1px solid transparent; border-radius: 0.45rem; font-size: 0.9rem; gap: 1.25rem; transition: background 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.button-primary { background: var(--accent); color: var(--paper); }
+.button-primary span { color: inherit; }
+.button-primary:hover { background: #b4e7dc; }
+.button-secondary { border-color: #718795; color: var(--ink); background: transparent; }
+.button-secondary:hover { background: var(--surface); border-color: var(--muted); }
+.contact-list, .scrum-steps li, .featured-project { background: var(--surface); border-color: var(--line); box-shadow: none; }
+.contact-row { min-height: 4.5rem; font-size: 0.9rem; transition: background 180ms ease; }
+a.contact-row:hover { background: #294251; }
+.contact-row > span:last-child { color: var(--accent); }
+.scrum-icon { background: #2b4555; stroke: var(--accent); }
+.scrum-step-label, .scrum-repeat { color: var(--accent); }
+.scrum-steps p, .scrum-roles p { font-size: 0.9rem; }
+.scrum-source { font-size: 0.85rem; }
+.work-hero { background: var(--surface); }
+.work-hero::before { background: linear-gradient(90deg, rgb(25 44 58 / 96%), rgb(25 44 58 / 80%) 40%, rgb(25 44 58 / 5%)); }
+.work-hero .eyebrow, .repository-index { color: #c7e6df; }
+.repository-cover { background: var(--surface); box-shadow: 0 8px 24px rgb(0 0 0 / 10%); }
+.cover-link-primary { border-color: var(--accent); background: var(--accent); color: var(--paper); }
+.cover-link:focus-visible { outline-color: var(--accent); }
+.cover-link-primary:hover { border-color: #b4e7dc; background: #b4e7dc; color: var(--paper); }
+.project-action { color: var(--ink); }
+.project-action:hover { border-color: var(--accent); background: var(--surface); }
+.project-repo span { color: var(--accent); }
+.site-footer { background: #172936; border-top-color: var(--line); }
+.site-footer p { font-size: 0.8rem; }
+.footer-copy { font-size: 0.75rem; }
+.back-top:hover { color: var(--paper); }
+@media (max-width: 680px) {
+  .header-inner, .section-wrap { width: calc(100% - 2rem); }
+  .header-inner { min-height: 4.5rem; }
+  .site-nav { gap: 0; background: var(--paper); border-bottom-color: var(--line); max-height: calc(100dvh - 4.5rem); overflow-y: auto; }
+  .site-nav a { padding: 0.95rem 0.5rem; font-size: 1rem; }
+  .about, .contact { grid-template-columns: minmax(0, 1fr); }
+  .contact-list { padding-inline: 0.85rem; }
+  .contact-row { grid-template-columns: 4.5rem minmax(0, 1fr) auto; font-size: 0.85rem; }
+  .work-hero::before { background: rgb(25 44 58 / 85%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button-primary:hover { transform: none; }
 }

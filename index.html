@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f4f5f2">
+    <meta name="theme-color" content="#192c3a">
     <meta name="description" content="Portafolio de Moisés Giraldo, desarrollador de software e inteligencia artificial en formación.">
     <title>Moisés Giraldo | Desarrollo de Software e IA</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <script src="js/app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
-    <header class="site-header">
+    <header class="site-header home-header">
       <div class="header-inner">
         <a class="wordmark" href="index.html" aria-label="Moisés Giraldo, ir al inicio">MG<span>.</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
@@ -27,14 +28,13 @@
       </div>
     </header>
 
-    <main id="contenido">
+    <main id="contenido" class="home-intro">
       <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> En formación · Abierto a aprender</p>
           <h1 id="hero-title">Moisés<br><span>Giraldo</span></h1>
           <p class="hero-role">Desarrollo de Software e Inteligencia Artificial</p>
           <p class="hero-intro">Desarrollo proyectos web con HTML, CSS y JavaScript mientras me formo en software e inteligencia artificial. Aquí puedes explorar las interfaces y revisar el código de mis proyectos.</p>
-          <ul class="skill-list" aria-label="Tecnologías aplicadas en mis proyectos"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
           <div class="hero-actions">
             <a class="button button-primary" href="proyectos.html">Ver proyectos <span aria-hidden="true">↘</span></a>
             <a class="button button-secondary" href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer">Mi GitHub <span aria-hidden="true">↗</span></a>
@@ -45,6 +45,29 @@
           <span class="portrait-index">01 / PERFIL</span>
           <span class="portrait-corner" aria-hidden="true"></span>
         </div>
+      </section>
+      <section class="technologies section-wrap" id="tecnologias" aria-labelledby="technologies-title">
+        <div class="technologies-heading">
+          <div>
+            <p class="eyebrow">Aprender · Aplicar · Mejorar</p>
+            <h2 id="technologies-title">Tecnologías</h2>
+          </div>
+          <p>Herramientas que aplico en mis proyectos web.</p>
+        </div>
+        <ul class="skill-list" aria-label="Tecnologías aplicadas en mis proyectos">
+          <li>
+            <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M8 5h24l-2 27-10 3-10-3Z"/><path d="m16 14-5 6 5 6m8-12 5 6-5 6"/></svg>
+            <div><h3>HTML</h3><p>Estructura web</p></div>
+          </li>
+          <li>
+            <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="6" y="6" width="28" height="28" rx="5"/><path d="M6 15h28M16 15v19M12 10.5h1m4 0h1"/></svg>
+            <div><h3>CSS</h3><p>Diseño y estilos</p></div>
+          </li>
+          <li>
+            <svg class="technology-icon" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="6" y="6" width="28" height="28" rx="5"/><path d="M18 15v11c0 4-6 4-6 0m16-9c-5-5-9 2-3 5s2 9-3 5"/></svg>
+            <div><h3>JavaScript</h3><p>Programación</p></div>
+          </li>
+        </ul>
       </section>
     </main>
 
